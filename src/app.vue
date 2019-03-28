@@ -1,25 +1,21 @@
 <template>
-    <div id="app" class="container">
-        {{ message }}
-        <p class="text">1111</p>
+    <div class="container">
+        <v-header></v-header>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+import VHeader from './components/Header.vue'
+
 export default {
-    data() {
-        return {
-            message: 'tang2'
-        }
+    components: {
+        VHeader
     }
 }
 </script>
 
 <style scoped lang="scss">
 .container {
-    color: pink;
-    .text {
-        color: red;
-    }
 }
 </style>

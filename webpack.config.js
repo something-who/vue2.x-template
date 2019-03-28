@@ -21,9 +21,8 @@ const config = {
         }),
         new VueLoaderPlugin(),
         new HTMLPlugin({
-            options: {
-                favicon: false
-            }
+            favicon: false,  // 是否加载favicon
+            template: './public/index.html',  // 模板
         })
     ],
     mode: 'none',
@@ -69,7 +68,7 @@ if(isDev) {
         overlay: {
             erros: true  // 编译的过程中能够让任何的错误都显示到网页上面
         },
-        open: true, // 自动打开浏览器
+        open: false, // 自动打开浏览器
         hot: true // 热更新
     }
 
