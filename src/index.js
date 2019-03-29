@@ -5,6 +5,8 @@ import router from './router'
 
 import './assets/styles/base.css'
 
+import './assets/images/fe.png'
+
 new Vue({
     router,
     render: h => h(App)

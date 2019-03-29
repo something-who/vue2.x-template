@@ -12,6 +12,13 @@ export default {
 }
 </script>
 
+<style scoped>
+    .link {
+        border: 1px solid #333;
+    }
+</style>
+
+
 <style lang="scss" scoped>
 .header {
     height: 60px;
